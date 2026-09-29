@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="60 65 145 152" width="580" height="608">
+  <defs>
+    <linearGradient id="iris" x1="0" y1="0" x2="0.15" y2="1">
+      <stop offset="0" stop-color="#e2841a"/>
+      <stop offset="0.35" stop-color="#f6a51f"/>
+      <stop offset="0.75" stop-color="#ffc62e"/>
+      <stop offset="1" stop-color="#ffe066"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.55" cy="0.95" r="0.6">
+      <stop offset="0" stop-color="#fff0a0" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#fff0a0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="pupil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d9772e"/>
+      <stop offset="0.5" stop-color="#e99a55"/>
+      <stop offset="1" stop-color="#f0a860"/>
+    </linearGradient>
+  </defs>
+
+  <!-- outer dark rim -->
+  <ellipse cx="132" cy="141" rx="64" ry="67" fill="#2b1204"/>
+  <!-- iris -->
+  <ellipse cx="132" cy="141" rx="58" ry="61" fill="url(#iris)"/>
+  <!-- warm inner rim -->
+  <ellipse cx="132" cy="141" rx="57" ry="60" fill="none" stroke="#c7690f" stroke-width="3" opacity="0.75"/>
+  <!-- lower glow -->
+  <ellipse cx="132" cy="141" rx="57" ry="60" fill="url(#glow)"/>
+  <!-- upper shadow from eyelid -->
+  <path d="M76 128 C80 92 105 84 132 84 C160 84 184 96 188 128 C170 108 96 108 76 128Z" fill="#a95a0a" opacity="0.5"/>
+
+  <!-- pupil -->
+  <ellipse cx="135" cy="140" rx="17" ry="40" fill="#b8601d"/>
+  <ellipse cx="135" cy="140" rx="14.5" ry="37.5" fill="url(#pupil)"/>
+  <ellipse cx="141" cy="132" rx="4.5" ry="20" fill="#f7c07a" opacity="0.6"/>
+
+  <!-- highlights -->
+  <ellipse cx="105" cy="102" rx="13" ry="11" fill="#fffdf5" transform="rotate(-20 105 102)"/>
+  <ellipse cx="107" cy="124" rx="6" ry="5" fill="#ffe9c0" opacity="0.85"/>
+</svg>
