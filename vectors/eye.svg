@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 284 272" width="568" height="544">
+  <defs>
+    <radialGradient id="iris" cx="0.45" cy="0.75" r="0.8">
+      <stop offset="0" stop-color="#ffd23a"/>
+      <stop offset="0.55" stop-color="#f7a91c"/>
+      <stop offset="1" stop-color="#d9760f"/>
+    </radialGradient>
+    <linearGradient id="pupil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e58a35"/>
+      <stop offset="1" stop-color="#f0a040"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffd84a"/>
+      <stop offset="1" stop-color="#f2a516"/>
+    </linearGradient>
+    <clipPath id="eyeShape">
+      <path d="M22 60 C70 55 150 62 205 135 C215 165 170 205 130 208 C80 205 45 170 35 105 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- background -->
+  <rect width="284" height="272" fill="#fdf1cf"/>
+
+  <!-- hair strands (top right) -->
+  <path d="M165 5 C185 0 215 8 232 22 C210 20 190 28 172 26 C162 20 160 12 165 5Z" fill="url(#hair)" stroke="#b8730b" stroke-width="2"/>
+  <path d="M178 12 C192 10 205 14 212 20 C200 22 188 22 180 20Z" fill="#fff0a0" stroke="#b8730b" stroke-width="1.5"/>
+  <path d="M225 0 C255 5 275 25 284 50 L284 90 C270 70 250 50 240 40 C232 28 228 14 225 0Z" fill="url(#hair)" stroke="#b8730b" stroke-width="2"/>
+
+  <g clip-path="url(#eyeShape)">
+    <!-- sclera -->
+    <rect width="284" height="272" fill="#fffaf0"/>
+    <path d="M30 70 L75 75 L60 190 L30 190Z" fill="#f1dcc0"/>
+    <path d="M60 78 C50 110 55 150 80 185 L70 190 C40 160 38 110 48 78Z" fill="#fdf3e0"/>
+    <!-- iris -->
+    <circle cx="132" cy="140" r="62" fill="url(#iris)" stroke="#2a1300" stroke-width="7"/>
+    <!-- darker upper shading of iris -->
+    <path d="M72 125 C80 75 180 70 194 125 C170 100 100 100 72 125Z" fill="#8a4a05" opacity="0.55"/>
+    <!-- pupil -->
+    <ellipse cx="135" cy="138" rx="15" ry="38" fill="url(#pupil)" stroke="#c96f1c" stroke-width="3"/>
+    <ellipse cx="139" cy="128" rx="5" ry="20" fill="#f6b65a" opacity="0.8"/>
+    <!-- highlights -->
+    <ellipse cx="105" cy="100" rx="12" ry="10" fill="#fff"/>
+    <ellipse cx="108" cy="122" rx="6" ry="5" fill="#fff6d0" opacity="0.9"/>
+    <path d="M92 150 C100 172 120 186 145 190" fill="none" stroke="#ffe88a" stroke-width="5" stroke-linecap="round" opacity="0.8"/>
+  </g>
+
+  <!-- upper lash / eyelid (thick black) -->
+  <path d="M0 38 C40 40 80 48 125 62 C165 76 195 110 213 150 L215 165 C200 135 180 108 148 90 C110 72 60 68 30 62 C15 58 5 60 0 66Z" fill="#0d0805"/>
+  <path d="M0 55 C25 60 45 75 42 110 C38 90 22 78 0 78Z" fill="#0d0805"/>
+  <!-- outer corner tick -->
+  <path d="M205 135 C215 150 222 165 222 175 C210 165 205 155 200 148Z" fill="#0d0805"/>
+
+  <!-- lower lash line -->
+  <path d="M38 105 C42 150 80 200 132 210 C170 210 205 180 216 158 C200 190 165 214 130 214 C75 210 38 160 34 108Z" fill="#0d0805"/>
+</svg>
